@@ -16,18 +16,11 @@
     $r->addRoute("login", "GET", "UserController", "Login");
     $r->addRoute("logout", "GET", "UserController", "Logout");
     $r->addRoute("verifyUser", "POST", "UserController", "verifyUser");
-    $r->addRoute("category", "GET", "AlmacenController", "Category");
+    $r->addRoute("category", "GET", "AlmacenController", "Categories");
     $r->addRoute("product", "GET", "AlmacenController", "Products");
     $r->addRoute("category/:ID", "GET", "AlmacenController", "ProductsByCategory");
     $r->addRoute("product/:ID", "GET", "AlmacenController", "ShowProductDetail");
     
-    
-    //Esto lo veo en TasksView
-    // $r->addRoute("insert", "POST", "TasksController", "InsertTask");
-    // $r->addRoute("delete/:ID", "GET", "TasksController", "BorrarLaTaskQueVienePorParametro");
-    // $r->addRoute("completar/:ID", "GET", "TasksController", "MarkAsCompletedTask");
-    // $r->addRoute("edit/:ID", "GET", "TasksController", "EditTask");
-
     //Ruta por defecto.
     $r->setDefaultRoute("AlmacenController", "Home");
 
