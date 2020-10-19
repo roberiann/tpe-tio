@@ -1,4 +1,4 @@
-html {
+﻿html {
     font-size: 3vw;
     font-family: 'Roboto', sans-serif;
     color: #575756;
@@ -15,7 +15,7 @@ html {
 
 header {
     margin: 0 auto 1% auto;
-    border-bottom: 0.0625rem solid #ddd;
+    border-bottom: 0.0625rem solid 
     padding-bottom: 2%;
 }
 
