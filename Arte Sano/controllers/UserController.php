@@ -4,7 +4,7 @@ require_once "./views/UserView.php";
 require_once "./models/UserModel.php";
 
 class UserController{
-
+// defino las variables privadas
     private $view;
     private $model;
 
@@ -13,20 +13,20 @@ class UserController{
         $this->model = new UserModel();
 
     }
-
+// defino la funcion login
     function Login(){
 
         $this->view->ShowLogin();
 
     }
-
+// defino la funcion logout
     function Logout(){
         session_start();
         session_destroy();
         header("Location: ".LOGIN);
 
     }
-
+// defino la funcion verifiuser
     function VerifyUser(){
         $user = $_POST["input_user"];
         $pass = $_POST["input_pass"];
