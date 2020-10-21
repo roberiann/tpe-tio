@@ -20,7 +20,7 @@ $r->addRoute("login", "GET", "UserController", "Login");
 $r->addRoute("logout", "GET", "UserController", "Logout");
 $r->addRoute("verifyUser", "POST", "UserController", "VerifyUser");
 
-$r->addRoute("home", "GET", "CategoriaController", "Home");
+$r->addRoute("index", "GET", "CategoriaController", "Home");
 $r->addRoute("categories", "GET", "CategoriaController", "Categories");
 
 $r->addRoute("categories-admin", "GET", "CategoriaAdminController", "Categories");
