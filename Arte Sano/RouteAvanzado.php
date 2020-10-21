@@ -12,7 +12,7 @@
     $r = new Router();
 
     // rutas
-    $r->addRoute("home", "GET", "AlmacenController", "Home");
+    $r->addRoute("index", "GET", "AlmacenController", "Home");
     $r->addRoute("login", "GET", "UserController", "Login");
     $r->addRoute("logout", "GET", "UserController", "Logout");
     $r->addRoute("verifyUser", "POST", "UserController", "verifyUser");
