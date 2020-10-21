@@ -2,7 +2,7 @@
 
 require_once './views/AlmacenView.php';
 require_once './models/AlmacenModel.php';
-
+// Alacen clase
 class AlmacenController {
     private $view;
     private $model;
@@ -12,7 +12,7 @@ class AlmacenController {
         $this->model = new AlmacenModel();
 
     }
-
+// declaro funcion checkloggein
     private function checkLoggedIn(){
         session_start();
         
@@ -28,7 +28,7 @@ class AlmacenController {
             $_SESSION['LAST_ACTIVITY'] = time();
         }
     }
-
+// declaro funcion home
     function Home() {
         $this->checkLoggedIn();
         $this->view->ShowHome();
